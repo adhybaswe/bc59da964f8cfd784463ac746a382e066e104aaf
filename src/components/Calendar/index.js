@@ -1,4 +1,4 @@
-import React,{useEffect,useRef} from 'react'
+import React from 'react'
 import styled from 'styled-components'
 
 const Wrapper = styled.div`
@@ -56,17 +56,8 @@ const dummy = [
 
 const Calendar = () => {
 
-	const containerCalendar = useRef(null);
-
-	useEffect(() => {
-
-		// console.log('test',(window.screen.width / 2 ) )
-	 //    // containerCalendar.current.scrollLeft = containerCalendar.current.scrollWidth / 2
-	 //    containerCalendar.current.scrollLeft = 225
-  	});
-
 	return(
-		<Wrapper ref={containerCalendar}>
+		<Wrapper>
 			{
 				dummy.map( (item,index) => {
 					const tmp = item.split('-')
