@@ -26,6 +26,9 @@ const ContentBottom = styled.div`
 	align-items:center;
 	flex-direction:row;
 	margin-top:16px;
+	& button{
+		flex:1;
+	}
 `;
 
 const Price = styled.div`
@@ -74,7 +77,7 @@ const Product = ({image,title,category,author,price,rating, onAdd}) => {
 					<MetaCategory>{category}</MetaCategory>
 				</Meta>
 				<ContentBottom>
-					<Price>Rp {price}</Price>
+					<Price>Rp {price.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.")}</Price>
 					<Button onClick={onAdd} />
 				</ContentBottom>
 			</Content>
