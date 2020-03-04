@@ -10,9 +10,9 @@ const Wrapper = styled.button`
   border:none;
 `;
 
-const Button = () => {
+const Button = ({onClick}) => {
 	return(
-		<Wrapper>
+		<Wrapper onClick={onClick}>
 			ADD +
 		</Wrapper>
 	)
