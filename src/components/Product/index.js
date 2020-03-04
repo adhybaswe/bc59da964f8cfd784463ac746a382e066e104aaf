@@ -22,20 +22,35 @@ const ContentTitle = styled.h3`
 
 const ContentBottom = styled.div`
 	display:flex;
+	align-items:center;
 	flex-direction:row;
+	margin-top:16px;
 `;
 
 const Price = styled.div`
 	width:70%;
+	font-weight:800;
 `;
 
 const Meta = styled.div`
 	color:#6e7679;
 	display:flex;
+	font-size:0.8rem;
 `;
 
 const MetaAutor = styled.div`
-	
+	position: relative;
+	margin-right:24px;
+	&:before{
+		content: '';
+		width: 5px;
+		right: -15px;
+		top: 7px;
+		height: 5px;
+		border-radius: 50%;
+		background-color: #6e7679;
+		position: absolute;
+	}
 `;
 
 const MetaCategory = styled.div`
