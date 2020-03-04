@@ -4,6 +4,7 @@ import styled from 'styled-components'
 const Wrapper = styled.div`
   padding: 8px;
   display:flex;
+  padding-top:0;
   flex-direction:row;
   flex-wrap: nowrap;
   overflow-x: auto;
@@ -13,8 +14,9 @@ const Wrapper = styled.div`
 const ItemCalendar = styled.div`
   padding: 8px;
   border-radius:50%;
-  width:35px;
-  height:35px;
+  width:25px;
+  height:25px;
+  margin:4px;
   font-weight:500;
   flex:0 0 auto;
   display:flex;
@@ -22,13 +24,14 @@ const ItemCalendar = styled.div`
   line-height:1;
   justify-content:center;
   align-items:center;
-  font-size:1.2rem;
+  font-size:1rem;
+  font-weight:700;
   flex-direction:column;
   background-color : ${props => props.active ? "#424749" : "transparent"} ; 
   color : ${props => props.active ? "#fff" : "inherit"} ; 
   span{
   	font-weight:normal;
-  	font-size:0.6rem;
+  	font-size:0.5rem;
   	display:flex;
   }
 `;
