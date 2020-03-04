@@ -61,7 +61,7 @@ const FeaturedImage = styled.img`
 	width:100%;
 `
 
-const Product = ({image,title,category,author,price,rating}) => {
+const Product = ({image,title,category,author,price,rating, onAdd}) => {
 	return(
 		<Wrapper>
 			<FeaturedImage src={image} alt={title} />
@@ -74,7 +74,7 @@ const Product = ({image,title,category,author,price,rating}) => {
 				</Meta>
 				<ContentBottom>
 					<Price>Rp {price}</Price>
-					<Button />
+					<Button onClick={onAdd} />
 				</ContentBottom>
 			</Content>
 		</Wrapper>
