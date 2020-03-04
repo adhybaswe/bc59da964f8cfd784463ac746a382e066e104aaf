@@ -50,6 +50,9 @@ const ItemLocationIconContainer = styled.div`
 
 const CloseModal = styled.button`
 	border:none;
+	float: right;
+    background: transparent;
+    font-size: 1rem;
 `;
 
 const ItemLocationIcon = styled.div`
