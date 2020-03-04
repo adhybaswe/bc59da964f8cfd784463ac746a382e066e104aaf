@@ -15,8 +15,9 @@ const Content = styled.div`
   padding:16px;
 `;
 
-const ContentTitle = styled.h3`
+const ContentTitle = styled.strong`
   margin-top:8px;
+  display:block;
   margin-bottom:4px;
 `;
 
