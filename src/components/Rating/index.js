@@ -10,7 +10,6 @@ const Wrapper = styled.div`
 
 const Star = styled.div`
 	display: inline-block;
-	font-size: 1.2rem;
 	line-height: 1;
 	
 	&:after {
@@ -23,6 +22,7 @@ const Star = styled.div`
 	}
 
 	&:before {
+		font-weight:700;
 	  	content: '${props => props.percent || "1"}';
 	}
 `;
