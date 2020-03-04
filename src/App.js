@@ -7,12 +7,18 @@ import Button from './components/Button';
 import Product from './components/Product';
 import Cart from './components/Cart';
 import Modal from './components/Modal';
+import ButtonGroup from './components/ButtonGroup';
 
 const Wrapper = styled.div`
-  padding-top:160px;
+  padding-top:124px;
   padding-bottom:56px;
   margin:0 auto;
   max-width:768px;
+`;
+
+const DateTitle = styled.strong`
+  display:block;
+  margin: 0 16px;
 `;
 
 function App() {
@@ -28,7 +34,6 @@ function App() {
   }
 
   const onOpenModal = () => {
-    alert('test')
      setModal(true) 
   }
 
@@ -36,9 +41,11 @@ function App() {
     <Wrapper>
       <Modal active={modal} onclose={onclose} />
       <Header onButtonClick={onOpenModal} />
+      <ButtonGroup />
+      <DateTitle>Jum'at. 6 Maret 2020</DateTitle>
       <Product 
         title="Roasted Chicken with Scrambled Egg"  
-        image="http://192.168.1.145:3000/images/sample-1.jpg"  
+        image="http://localhost:3000/images/sample-1.jpg"  
         category="Uptown Lunch"  
         author="by Kulina"  
         price={35000}  
@@ -47,7 +54,7 @@ function App() {
       />
       <Product 
         title="Roasted Chicken with Scrambled Egg"  
-        image="http://192.168.1.145:3000/images/sample-1.jpg"  
+        image="http://localhost:3000/images/sample-1.jpg"  
         category="Uptown Lunch"  
         author="by Kulina"  
         price={35000}  
